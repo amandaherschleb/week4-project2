@@ -51,39 +51,47 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <h2>You can click on the question text to reveal a hint!</h2>
       <h3>Write your answers in practice.js</h3><br><br>
+    <div class="text-display">
       <p id="1">1. When 'Submit' is clicked, add the contents of the textbox below the button in a h3 element.</p>
       <p id="hidden1">Try using .val() and a variable<br></p>
       <input type="text" class="textInput">
       <button class="btn btn-info" id="submitBtn">Submit</button>
+    </div>
       <hr>
+
       <p id="2">2. When the checkbox is clicked, reveal the hidden message...</p>
       <p id="hidden2">Google .toggleClass()<br></p>
       <div class="chex">
         <input type="checkbox">
       </div>
-      <h2 class="hidden">You are a jQuery God!</h2>
+      <h2 id='q2-message' class="hidden">You are a jQuery God!</h2>
       <hr>
+
       <div class="row">
         <div class="col-xs-6">
           <p id="3">3. Add a new cat to the table.</p>
           <p id="hidden3">Try appending html elements like table row and table data here<br></p>
+
           <p id="4">4. Make 'hangry' red and 'content' green.</p>
           <p id="hidden4">Google .text() so you can grab the values from each td. A conditional statement might be needed here.<br></p>
+
           <p id="5">5. When clicked, only display cats weighing 10+ lbs:<br>
           <p id="hidden5">Consider googling .each() to iterate over all of the children.. Another conditional needed. (:<br></p>
-            <button class="btn btn-warning">Heavy Cats</button>
+            <button id='heavy-cats' class="btn btn-warning">Heavy Cats</button>
           </p>
+
           <p id="6">6. When clicked, uppercase all cat names: <br>
           <p id="hidden6">This should look similar to #4 & #5. Try out .toUpperCase().<br></p>
-            <button class="btn btn-success">YELL NAMES</button>
+            <button id='yell' class="btn btn-success">YELL NAMES</button>
           </p>
+
           <p id="7">7. Show and hide the table with this button: <br>
             <p id="hidden7">Easy peasy, right? .toggle() is handy.<br></p>
-            <button class="btn btn-primary">Toggle Table</button>
+            <button id="toggle" class="btn btn-primary">Toggle Table</button>
           </p>
         </div>
         <div class="col-xs-6">
-          <table class="table table-striped">
+          <table id='cat-table' class="table table-striped">
             <thead>
               <tr>
                 <th>Name</th>
@@ -122,29 +130,32 @@
         </div>
       </div>
       <hr>
+
       <p id="8">8. Disable the input field, the checkbox, and the link to Google:</p>
       <p id="hidden8">.prop() will come in handy for the first one. Then, check out .preventDefault() for the link.<br></p>
       <div id="disableUs">
-        <input type="text" placeholder="You can't type here">
+        <input id='text-box' type="text" placeholder="You can't type here">
         <br>
         <br>
         <label>
-          <input type="checkbox" value="">
+          <input id='checkbox' type="checkbox" value="">
           You can't check this box</label>
         <br>
         <br>
-        <a href="https://google.com">No more Google</a> </div>
+        <a id='no-link' href="https://google.com">No more Google</a> </div>
       <hr>
       <p id="9">9. Select the third option from the dropdown, and append it to the page.</p>
       <p id="hidden9">Try using .find() here.<br></p>
-      <select class="dropdown">
+      <div id=dropdownDiv>
+      <select id='dropdown' class="dropdown">
         <option value="Select an option below">Select an option below</option>
         <option value="Wrong Choice">Wrong Choice</option>
         <option value="Wrong Choice">Wrong Choice</option>
         <option value="Wahoo!!!">Wahoo!!!</option>
       </select>
+    </div>
       <hr>
-      <p id="10">10. Alert the user how many items are in the list</p>
+      <p id="10">10. Alert the user how many items are in the list (on click)</p>
       <p id="hidden10">Let's iterate over those children again. Try using a counter with this one.<br></p>
       <ul id="alertList">
         <li>Uno</li>
@@ -152,11 +163,18 @@
         <li>Tres</li>
       </ul>
       <hr>
+
       <p id="11">11. Create buttons that add and remove list items.</p>
       <p id="hidden11">Try inserting straight up HTML button. Use a click function and counter variable.<br></p>
+
+      <button id="add-item" class="btn btn-primary">Add Item</button>
+      <button id="remove-item" class="btn btn-primary">Remove Item</button>
+
       <hr>
+
       <p id="12">12. Create a counter that displays the length of the list.</p>
       <p id="hidden12">The reverse of #11, but decrementing with the counter.<br></p>
+
       <hr>
     </div>
   </div>

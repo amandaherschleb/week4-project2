@@ -25,6 +25,7 @@ h6 {
   font-weight: 800;
 }
 
+
 #hidden1,
 #hidden2,
 #hidden3,
@@ -40,6 +41,7 @@ h6 {
   color: orange;
   display: none;
 }
+
 
 .btn {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
