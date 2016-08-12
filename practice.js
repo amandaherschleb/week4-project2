@@ -57,7 +57,6 @@ $(document).ready(function(){
 
     })
   });
-///need to figure out how to toggle back to lower case
 
 
 // 7 - click to show and hide the table
@@ -107,7 +106,7 @@ $(document).ready(function(){
     var totalItems = $('#alertList > li').length;
     $('#12').append('<p> Items in list: ' + totalItems + '</p>');
 
-    $('.btn').click(function(){
+    $('#add-item,#remove-item').click(function(){
       totalItems = $('#alertList > li').length;
       $('#12 p').html('<p> Items in list: ' + totalItems + '</p>');
     });
