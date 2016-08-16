@@ -55,7 +55,7 @@ $(document).ready(function(){
       //console.log(capsName);  //confirm that all are upper case
       $(this).html('<td>' + capsName + '</td>');
 
-    })
+    });
   });
 
 
@@ -81,7 +81,7 @@ $(document).ready(function(){
     $('#dropdown').change(function(){
       var selectedOption = ($(this).val());
       $('#dropdownDiv').append('<p>' + selectedOption + '</p>');
-    })
+    });
 
 // 10 - alert user how many items are in the list
 
@@ -98,7 +98,7 @@ $(document).ready(function(){
 
     $('#remove-item').click(function(){
       $('#alertList li:last').remove();
-    })
+    });
 
 
 // 12 - create counter to display the length of the list
